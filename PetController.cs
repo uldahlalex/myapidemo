@@ -7,6 +7,8 @@ public class Pet
     public string PetName { get; set; }
 }
 
+[ApiController]
+[ResponseCache(NoStore = true, Duration = 0)]
 public class PetController(MyFakeDb db) : ControllerBase
 {
 
